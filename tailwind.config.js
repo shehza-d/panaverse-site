@@ -9,16 +9,22 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
-    colors: {
-      bk: "#09121d",
-      wt: "#F5F5F5",
-      gray: {
-        100: "#f7fafc",
-        900: "#1a202c",
+    extend: {
+      colors: {
+        bk: "#09121d",
+        wt: "#F5F5F5",
+        accent: "#11AD8E",
+        gray: {
+          100: "#f7fafc",
+          900: "#1a202c",
+        },
+      },
+      fontFamily: {
+        out: ["var(--font-outfit)"],
       },
     },
-    extend: {},
   },
   plugins: [],
 };
