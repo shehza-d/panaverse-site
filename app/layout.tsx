@@ -20,7 +20,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={` bg-white dark:bg-bk`}>{children}</body>
+      <body className={``}>{children}</body>
     </html>
   );
 }
