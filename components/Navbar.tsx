@@ -22,7 +22,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
   }, []);
 
   return (
-    <nav className="fixed top-0 flex w-full items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
+    <nav className="fixed top-0 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
       <div className="flex items-center gap-12">
         <Image src={logo} width={150} height={150} alt="Logo of Panaverse" />
         <ul className="flex gap-4 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200">
