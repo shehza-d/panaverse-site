@@ -2,8 +2,11 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import logo from "../public/panaverse-logo.png";
+import { useContext } from "react";
+import { GlobalContext } from "../context/context";
 
 export default function Navbar() {
+  const { state, dispatch } = useContext(GlobalContext);
   const [dropDownState, setDropDownState] = useState(false);
   const handleDropDownState = () => setDropDownState(!dropDownState);
   // const dropDownBtn = useRef<HTMLButtonElement>(null);
@@ -99,10 +102,13 @@ export default function Navbar() {
           />
         </button>
         <div className="inline-block h-5 rounded-md border-[1px] border-neutral-100"></div>
-        <button className="p-2">
+        <button
+          className="p-2"
+          onClick={() => dispatch({ type: "TOGGLE_THEME" })}
+        >
           <Image
             className="fill-accent text-accent"
-            src="/lightMode.svg"
+            src={`${state.darkTheme ? "/darkMode.svg" : "/lightMode.svg"}`}
             alt="bell icon"
             width={24}
             height={24}
@@ -111,6 +117,9 @@ export default function Navbar() {
         <button className="rounded-md bg-accent py-2 px-4 text-gray-100 hover:bg-accent hover:bg-opacity-90 dark:text-gray-900">
           Apply Now
         </button>
+        <div className="bg-black text-white dark:text-red-600">
+          dfdfjdfkdfdfuhuhuh
+        </div>
       </div>
     </nav>
   );
