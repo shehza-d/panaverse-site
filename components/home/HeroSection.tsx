@@ -3,23 +3,12 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div
-      className="h-screen"
+      style={{ backgroundImage: "url('/hero.png')" }}
+      className="h-screen bg-cover bg-center bg-no-repeat"
       // style={{ backgroundImage: "url('/hero.png')" }}
     >
-      <div className="absolute -z-10 w-screen">
-        <Image
-          className="m-0"
-          src="/hero.png"
-          // layout="fill"
-          // objectFit="cover"
-          quality={100}
-          width={1440}
-          height={780}
-          alt="hero banner panaverse"
-        />
-      </div>
-      <div className="flex h-full items-center justify-center">
-        <div className="w-1/2 border-4 border-red-500">
+      <div className="flex h-full flex-wrap items-center justify-around">
+        <div className="w-[45%]">
           <h1 className="text-5xl font-black text-wt">
             Become <span className="text-accent">Certified Web 3.0</span> and
             <span className="text-accent">Metaverse Developer</span>
@@ -32,14 +21,32 @@ export default function HeroSection() {
             Apply Now
           </button>
         </div>
-        <Image
+        <div
+          style={{ backgroundImage: "url('/home/hero-cartoon.png')" }}
+          className="h-96  w-[45%] border-4 border-red-500 bg-contain bg-center bg-no-repeat"
+        ></div>
+        {/* <Image
           className="w-1/2 "
           src="/main/hero-cartoon.png"
           alt="hero section cartoon"
           width={528}
           height={541}
-        />
+        /> */}
       </div>
     </div>
   );
+}
+{
+  /* <div className="border-6 absolute -z-10 w-screen border-blue-400">
+        <Image
+          className="m-0"
+          src="/hero.png"
+          // layout="fill"
+          // objectFit="cover"
+          quality={100}
+          width={1440}
+          height={780}
+          alt="hero banner panaverse"
+        />
+      </div> */ 5;
 }
