@@ -54,34 +54,34 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
               </svg>
             </button>
             {dropDownState ? (
-              <ul className=" drop  absolute left-2 top-8 z-10 w-96 cursor-pointer  divide-y divide-gray-100 rounded-lg bg-white px-2 py-2 text-sm text-gray-500 shadow dark:bg-gray-700  dark:text-gray-200">
+              <ul className=" drop  absolute left-2 top-16 z-10  w-96 cursor-pointer divide-y divide-gray-50  rounded-lg bg-white bg-opacity-40 px-2 py-2 text-sm text-black shadow backdrop-blur-md dark:divide-slate-600 dark:bg-gray-700 dark:bg-opacity-40  dark:text-gray-200">
                 <li>
-                  <span className="block px-4 py-2 hover:bg-gray-100  dark:hover:bg-gray-600">
+                  <span className="block px-4 py-2 hover:bg-gray-400  dark:hover:bg-gray-600">
                     Web 3.0 and Metaverse
                   </span>
                 </li>
                 <li>
-                  <span className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <span className="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-600">
                     Artificial Intelligence (AI) and Deep Learning
                   </span>
                 </li>
                 <li>
-                  <span className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <span className="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-600">
                     Cloud-Native Computing
                   </span>
                 </li>
                 <li>
-                  <span className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <span className="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-600">
                     Ambient Computing and IoT
                   </span>
                 </li>
                 <li>
-                  <span className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <span className="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-600">
                     Genomics and Bioinformatics
                   </span>
                 </li>
                 <li>
-                  <span className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <span className="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-600">
                     Network Programmability and Automation
                   </span>
                 </li>

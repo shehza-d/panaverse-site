@@ -1,4 +1,4 @@
-export const reducer = (state, action) => {
+export const reducer = (state: any, action: any) => {
   switch (action.type) {
     case "USER_LOGIN": {
       return { ...state, isLogin: true, user: action.payload };
