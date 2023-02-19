@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div
+    <header
       style={{ backgroundImage: "url('/hero.png')" }}
       className="h-screen bg-cover bg-center bg-no-repeat"
       // style={{ backgroundImage: "url('/hero.png')" }}
@@ -33,7 +33,7 @@ export default function HeroSection() {
           height={541}
         /> */}
       </div>
-    </div>
+    </header>
   );
 }
 {

@@ -24,6 +24,13 @@
   margin: 0;
 }
 
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
