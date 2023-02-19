@@ -91,7 +91,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
           <li className="">Contact</li>
         </ul>
       </div>
-      <div className="flex items-center gap-8  transition-all duration-300">
+      <div className="flex  items-center gap-8 transition-all duration-300">
         <button className="p-2">
           <Image
             className="fill-red-300"
