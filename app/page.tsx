@@ -12,14 +12,14 @@ export default function Home() {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
   // const { state } = useContext(GlobalContext);
 
-  useEffect(() => {
-    const darkModePreference = JSON.parse(localStorage.getItem("darkTheme"));
-    setDarkTheme(darkModePreference);
-  }, []);
-  useEffect(
-    () => localStorage.setItem("darkTheme", `${darkTheme}`),
-    [darkTheme]
-  );
+  // useEffect(() => {
+  //   const darkModePreference = JSON.parse(localStorage.getItem("darkTheme"));
+  //   setDarkTheme(darkModePreference);
+  // }, []);
+  // useEffect(
+  //   () => localStorage.setItem("darkTheme", `${darkTheme}`),
+  //   [darkTheme]
+  // );
 
   return (
     // <ContextProvider>
