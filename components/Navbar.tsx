@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import logo from "../public/panaverse-logo.png";
 // import { useContext } from "react";
@@ -22,7 +23,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
   }, []);
 
   return (
-    <nav className="fixed top-0 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
+    <nav className="fixed top-1 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
       <div className="flex items-center gap-12">
         <Image src={logo} width={150} height={150} alt="Logo of Panaverse" />
         <ul className="flex gap-4 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200">
@@ -111,8 +112,13 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
             height={24}
           />
         </button>
-        <button className="rounded-md bg-accent  py-2 px-4 text-gray-900 transition-all duration-300 hover:bg-accent hover:bg-opacity-90 dark:text-gray-100">
-          Apply Now
+        <button>
+          <Link
+            className="rounded-md  bg-gradient-to-r from-accent  to-green-500 py-2 px-4 text-gray-900 transition-all duration-300 hover:bg-accent hover:bg-opacity-90 dark:text-gray-100"
+            href="https://portal.piaic.org/"
+          >
+            Apply Now
+          </Link>
         </button>
       </div>
     </nav>
