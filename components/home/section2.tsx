@@ -12,7 +12,7 @@ export default function Section2() {
       />
       <div
         className="h-96 w-5/12 rounded-2xl bg-[#353536] p-10"
-        //     // "linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.4);",
+        //   f  // "linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.4);",
       >
         <h4 className="text-center text-4xl  font-bold text-accent">
           The Program in a Nutshell
