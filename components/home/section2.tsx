@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 export default function Section2() {
-  //   console.log("shehzad");
-
   return (
     <section className="bg-white dark:bg-bk ">
       <Image
