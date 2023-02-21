@@ -25,7 +25,15 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
   return (
     <nav className="fixed top-1 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
       <div className="flex items-center gap-12">
-        <Image src={logo} width={150} height={150} alt="Logo of Panaverse" />
+        <Link href={"/"}>
+          <Image
+            className=""
+            width={150}
+            height={150}
+            src="/panaverse-logo.png"
+            alt="Logo of Panaverse"
+          />
+        </Link>
         <ul className="flex gap-4 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200">
           <li className="">Home</li>
           <li className="">About</li>

@@ -26,10 +26,10 @@ export default function HeroSection() {
           </h3>
           <button>
             <Link
-              className="rounded-md bg-gradient-to-r from-accent  to-green-500 py-2 px-4 text-gray-900 transition-all duration-300 hover:bg-accent hover:bg-opacity-90 dark:text-gray-100"
+              className="rounded-md bg-gradient-to-r from-accent  to-green-500 py-2 px-4 text-gray-900 transition-all duration-500  hover:py-3 hover:px-5 dark:text-gray-100"
               href="https://portal.piaic.org/"
             >
-              Apply Now
+              Join Now
             </Link>
           </button>
         </div>

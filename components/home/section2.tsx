@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Section2() {
   return (
-    <section className="bg-white dark:bg-bk ">
+    <section className="flex h-screen items-center justify-center bg-white  dark:bg-bk ">
       <Image
+        className="z-10 max-h-[630px]"
         src="/home/section2.png"
         quality={100}
         width={644}
@@ -11,8 +12,8 @@ export default function Section2() {
         alt="section 2 cartoon panaverse"
       />
       <div
-        className="h-96 w-5/12 rounded-2xl bg-[#353536] p-10"
-        //   f  // "linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.4);",
+        className="z-20 h-96 w-5/12 rounded-2xl bg-[#2e2e3f] p-10"
+        //  // "linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.4);",
       >
         <h4 className="text-center text-4xl  font-bold text-accent">
           The Program in a Nutshell
