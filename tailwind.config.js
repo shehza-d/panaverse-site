@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         bk: "#09121d",
         wt: "#F5F5F5",
+        t2: "#2e2e3f",
         accent: "#11AD8E",
         gray: {
           100: "#f7fafc",

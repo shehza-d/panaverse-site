@@ -8,6 +8,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient {
+  @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
+}
 /* body {
   background: #f5f5f5;
   background-color: #09121d;

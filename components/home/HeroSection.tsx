@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <header
-      style={{ backgroundImage: "url('/hero.png')" }}
+      style={{ backgroundImage: "url('/home/hero.png')" }}
       className="h-screen bg-cover bg-center bg-no-repeat"
       // style={{ backgroundImage: "url('/hero.png')" }}
     >

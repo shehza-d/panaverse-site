@@ -2,7 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import logo from "../public/panaverse-logo.png";
+// import logo from "../public/panaverse-logo.png";
+// import logoDk from "../public/panaverse-logo-red.png";
+
 // import { useContext } from "react";
 // import { GlobalContext } from "../context/context";
 
@@ -24,23 +26,34 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
 
   return (
     <nav className="fixed top-1 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
-      <div className="flex items-center gap-12">
+      <div className="flex items-center gap-10">
         <Link href={"/"}>
           <Image
             className=""
             width={150}
             height={150}
-            src="/panaverse-logo.png"
+            src={`${
+              darkTheme ? "/panaverse-logo.png" : "/panaverse-logo-red.png"
+            }`}
             alt="Logo of Panaverse"
           />
         </Link>
-        <ul className="flex gap-4 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200">
-          <li className="">Home</li>
-          <li className="">About</li>
+        <ul className="flex items-center gap-2 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200">
+          <li>
+            <Link href={"/"} className="px-2 py-1  hover:text-accent">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href={"/about"} className="px-2 py-1 hover:text-accent">
+              About
+            </Link>
+          </li>
+
           <li className="relative">
             <button
               // ref={dropDownBtn}
-              className="drop  flex items-center focus:outline-none"
+              className="drop flex items-center px-2 py-1 hover:text-accent "
               // id="dropdownDefaultButton"
               type="button"
               onClick={handleDropDownState}
@@ -97,7 +110,11 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
               </ul>
             ) : null}
           </li>
-          <li className="">Contact</li>
+          <li>
+            <Link href={"/about"} className="px-2 py-1 hover:text-accent">
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="flex items-center gap-8 transition-all duration-300">
