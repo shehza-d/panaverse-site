@@ -4,7 +4,7 @@ import me from "../../public/home/shehzad.jpg";
 
 export default function StudentFeedback() {
   return (
-    <section className="h-screen   transition-all duration-300  ">
+    <section className="flex  h-screen flex-col justify-evenly transition-all duration-300  ">
       <h2 className="text-5xl font-bold text-gray-100">StudentFeedback</h2>
 
       <div className=" w-6/12 rounded-3xl border-4 border-accent bg-[#2e2e3f] p-10">
@@ -54,7 +54,7 @@ export default function StudentFeedback() {
         />
         {/* <span className="text-9xl text-accent"> &ldquo; &rdquo;</span> */}
       </div>
-      <Image className="relative" src={model} alt="model" />
+      <Image className="relative right-8" src={model} alt="model" />
     </section>
   );
 }

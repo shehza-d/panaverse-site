@@ -25,7 +25,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
   }, []);
 
   return (
-    <nav className="fixed top-1 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
+    <nav className="fixed top-1 z-50 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
       <div className="flex items-center gap-10">
         <Link href={"/"}>
           <Image

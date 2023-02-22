@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+// Assets
 import partner1 from "../../public/home/partners/air-uni.png";
 import partner2 from "../../public/home/partners/bahria.png";
 import partner3 from "../../public/home/partners/cecos.png";
@@ -7,19 +8,25 @@ import partner4 from "../../public/home/partners/panacloud.svg";
 import partner5 from "../../public/home/partners/piaic.svg";
 import partner6 from "../../public/home/partners/psx.png";
 import partner7 from "../../public/home/partners/saylani.png";
-
-// import partner8 from "../../public/home/partners/panacloud.svg";
+import journey from "../../public/home/journey.png";
 
 export default function OurPartners() {
   return (
-    <section className="flex h-[60vh]  flex-col justify-evenly  bg-white  dark:bg-bk ">
+    <section className="relative flex h-[60vh]  flex-col justify-evenly  bg-white  dark:bg-bk ">
       <h3 className="gradient text-center text-4xl font-bold sm:text-5xl">
         OurPartners
       </h3>
+      <Image
+        className="absolute top-4 left-8 z-10"
+        src={journey}
+        width={200}
+        height={200}
+        alt="partner1"
+      />
 
-      <div className="md">
+      <div className="">
         <Marquee
-          className="dark:bg-emerald-100"
+          className="dark:bg-slate-200"
           pauseOnClick
           speed={30}
           gradient={true}
