@@ -1,5 +1,4 @@
 * {
-  /* box-sizing: border-box; */
   margin: 0;
 }
 
@@ -14,12 +13,11 @@
 *,
 *::after,
 *::before {
-  /* box-sizing: border-box; */
-  box-sizing: content-box;
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
 }
 * {
   font-family: inherit;
-  margin: 0;
 }
 
 button,
@@ -28,7 +26,14 @@ textarea,
 select {
   font: inherit;
 }
-
+.bdr {
+  border: 2px solid red;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*
 html,
 body {
@@ -51,9 +56,4 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
 */

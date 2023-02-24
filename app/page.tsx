@@ -11,6 +11,9 @@ import { motion, useScroll, useMotionValue } from "framer-motion";
 import WhyToJoin from "@/components/home/WhyToJoin";
 import StudentFeedback from "@/components/home/StudentFeedback";
 import OurPartners from "@/components/home/OurPartners";
+import OperationalCities from "@/components/home/OperationalCities";
+import Footer from "@/components/Footer";
+// import TwNav from "../components/tailwind/nav";
 
 export default function Home() {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
@@ -39,12 +42,14 @@ export default function Home() {
         style={{ backgroundImage: "url('/home/attachmentFixed.png')" }}
       >
         <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+        {/* <TwNav /> */}
         <HeroSection />
         <Section2 />
         <WhyToJoin />
         <StudentFeedback />
         <OurPartners />
-        {/* <div className="h-screen bg-white dark:bg-bk">uhuhuh</div> */}
+        <OperationalCities />
+        <Footer />
       </main>
       {/* // </ContextProvider> */}
     </>

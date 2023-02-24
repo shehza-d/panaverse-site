@@ -17,7 +17,7 @@ export default function WhyToJoin() {
         </p>
       </div>
 
-      <div className="cards flex flex-wrap gap-2 ">
+      <div className=" flex flex-wrap gap-2 ">
         <div className="flex h-72 min-w-[200px] flex-1 flex-col items-center justify-evenly rounded-2xl  border-4 border-accent bg-[#2e2e3f] px-2  md:h-96 ">
           <h3 className=" text-center  text-2xl font-semibold  text-gray-200">
             Product Owners

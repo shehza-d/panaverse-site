@@ -16,7 +16,7 @@ export default function OurPartners() {
   // const [first, setfirst] = useState();
 
   return (
-    <section className="relative flex h-[60vh]  flex-col justify-evenly  bg-white  dark:bg-bk ">
+    <section className="relative flex h-[60vh] flex-col justify-evenly bg-white transition-all duration-300 dark:bg-bk ">
       <h3 className="gradient text-center text-4xl font-bold sm:text-5xl">
         OurPartners
       </h3>
