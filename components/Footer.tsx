@@ -18,15 +18,17 @@ export default function Footer() {
           <Image src={logo} alt="logo of Panaverse" />
 
           <Link
-            href="https://www.google.com"
-            className="flex  items-center p-1 text-gray-100"
+            href="https://goo.gl/maps/UPXtpSiJ5NH2"
+            target="_blank"
+            className="flex items-center  p-1 text-gray-100 hover:text-accent"
           >
             <FiMapPin className="text-accent" /> &nbsp; Plot 245/2 M, PECHS
             Block 6, Karachi
           </Link>
           <Link
-            href="https://www.google.com"
-            className="flex  items-center p-1 text-slate-100"
+            href="https://wa.me/923082220203"
+            target="_blank"
+            className="flex items-center p-1 text-slate-100 hover:text-accent"
           >
             <FaWhatsapp className="text-accent" /> &nbsp; +92 308 2220203
           </Link>
@@ -101,3 +103,7 @@ export default function Footer() {
     </footer>
   );
 }
+// Call+92-21-34321224
+// 0308-2220203
+// education@piaic.org
+// https://www.piaic.org
