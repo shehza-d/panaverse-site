@@ -11,13 +11,12 @@ export default function Footer() {
       className="h-[28rem]"
       style={{
         backgroundImage: "url('/home/footer.png')",
-        // background:
-        //   "linear-gradient(0deg, rgba(1, 3, 28, 0.76),  rgba(1, 3, 28, 0.76)), url('/home/footer.png')",
       }}
     >
       <div className="footer-container flex">
         <div className="bdr flex-1">
           <Image src={logo} alt="logo of Panaverse" />
+
           <Link
             href="https://www.google.com"
             className="flex  items-center p-1 text-gray-100"
