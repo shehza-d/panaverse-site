@@ -4,6 +4,7 @@ export default function Head() {
       <title>Panaversity</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Panaverse website by Shehzad" />
+      <meta name="author" content="Shehzad Iqbal" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"

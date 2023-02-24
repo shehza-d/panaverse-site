@@ -9,8 +9,12 @@ import partner5 from "../../public/home/partners/piaic.svg";
 import partner6 from "../../public/home/partners/psx.png";
 import partner7 from "../../public/home/partners/saylani.png";
 import journey from "../../public/home/journey.png";
+// import { useState } from "react";
 
 export default function OurPartners() {
+  console.log("testing serversss");
+  // const [first, setfirst] = useState();
+
   return (
     <section className="relative flex h-[60vh]  flex-col justify-evenly  bg-white  dark:bg-bk ">
       <h3 className="gradient text-center text-4xl font-bold sm:text-5xl">
@@ -29,7 +33,7 @@ export default function OurPartners() {
           className="dark:bg-slate-200"
           pauseOnClick
           speed={30}
-          gradient={true}
+          gradient={false}
           gradientColor={[17, 173, 142]}
           gradientWidth={200}
         >

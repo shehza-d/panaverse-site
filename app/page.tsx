@@ -29,6 +29,7 @@ export default function Home() {
   return (
     <>
       {/* // <ContextProvider> */}
+      {/* Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 z-40 h-3  bg-accent"
         style={{ scaleX: scrollYProgress }}

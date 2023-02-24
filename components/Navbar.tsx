@@ -120,7 +120,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
       <div className="flex items-center gap-8 transition-all duration-300">
         <button className="p-2">
           <Image
-            className="fill-red-300"
+            className=" invert transition-all duration-300 dark:invert-0	"
             src="/bell.svg"
             alt="bell icon"
             width={24}
@@ -130,7 +130,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
         <div className="inline-block h-5 rounded-md border-[1px] border-slate-900 transition-all duration-300 dark:border-neutral-100"></div>
         <button className="p-2" onClick={() => setDarkTheme(!darkTheme)}>
           <Image
-            className="fill-accent text-accent"
+            className=" invert transition-all duration-300 dark:invert-0	"
             src={`${darkTheme ? "/darkMode.svg" : "/lightMode.svg"}`}
             alt="bell icon"
             width={24}

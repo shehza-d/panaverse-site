@@ -17,10 +17,6 @@ module.exports = {
         wt: "#F5F5F5",
         t2: "#2e2e3f",
         accent: "#11AD8E",
-        gray: {
-          100: "#f7fafc",
-          900: "#1a202c",
-        },
       },
       fontFamily: {
         out: ["var(--font-outfit)"],

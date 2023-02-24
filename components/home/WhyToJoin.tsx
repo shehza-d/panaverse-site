@@ -6,7 +6,7 @@ import img4 from "../../public/home/why-to-join-4.png";
 
 export default function WhyToJoin() {
   return (
-    <section className=" flex flex-col items-center justify-evenly border-2 border-blue-400  bg-white px-8 py-8 transition-all duration-300  dark:bg-bk sm:px-14  md:h-[120vh]   ">
+    <section className=" flex flex-col items-center justify-evenly  bg-white px-8 py-8 transition-all duration-300  dark:bg-bk sm:px-14  md:h-[120vh]   ">
       <h2 className="gradient text-4xl font-bold sm:text-5xl">Why to Join</h2>
       <div className="md:w-[70%] lg:w-[60%]">
         <p className="py-4 text-justify  text-gray-800 transition-all duration-300 dark:text-gray-300 sm:text-lg">
@@ -17,7 +17,7 @@ export default function WhyToJoin() {
         </p>
       </div>
 
-      <div className="cards flex flex-wrap gap-2   border-2 border-red-400">
+      <div className="cards flex flex-wrap gap-2 ">
         <div className="flex h-72 min-w-[200px] flex-1 flex-col items-center justify-evenly rounded-2xl  border-4 border-accent bg-[#2e2e3f] px-2  md:h-96 ">
           <h3 className=" text-center  text-2xl font-semibold  text-gray-200">
             Product Owners
