@@ -48,7 +48,7 @@ export default function Home() {
         <WhyToJoin />
         <StudentFeedback />
         <OurPartners />
-        <OperationalCities />
+        {/* <OperationalCities /> */}
         <Footer />
       </main>
       {/* // </ContextProvider> */}

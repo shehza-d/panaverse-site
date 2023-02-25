@@ -1,5 +1,8 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 300ms;
+  font-family: inherit;
 }
 
 @tailwind base;
@@ -10,50 +13,35 @@
   @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  /* box-sizing: content-box; */
-}
-* {
-  font-family: inherit;
-}
-
 button,
 input,
 textarea,
 select {
   font: inherit;
 }
-.bdr {
-  border: 2px solid red;
-}
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.bdr {
+  border: 2px solid red;
+}
+.bdr2 {
+  border: 2px solid green;
+}
+.bdr3 {
+  border: 2px solid blue;
+}
+.bdr4 {
+  border: 2px solid yellow;
+}
+
 /*
-html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 a {
   color: inherit;
-  text-decoration: none;
 }
-
 */
