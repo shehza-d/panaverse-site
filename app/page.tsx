@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
 // import ContextProvider from "../context/context";
 import HeroSection from "@/components/home/HeroSection";
-import Section2 from "@/components/home/section2";
+import ProgramInNutshell from "@/components/home/ProgramInNutshell";
 // import { useContext } from "react";
 // import { GlobalContext } from "../context/context";
 import { motion, useScroll, useMotionValue } from "framer-motion";
@@ -41,10 +41,10 @@ export default function Home() {
         className={`${darkTheme ? "dark" : ""} bg-fixed`}
         style={{ backgroundImage: "url('/home/attachmentFixed.png')" }}
       >
-        <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+        {/* <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} /> */}
         {/* <TwNav /> */}
         <HeroSection />
-        <Section2 />
+        <ProgramInNutshell />
         <WhyToJoin />
         {/* <StudentFeedback /> */}
         {/* <OurPartners /> */}
