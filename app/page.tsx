@@ -46,8 +46,8 @@ export default function Home() {
         <HeroSection />
         <Section2 />
         <WhyToJoin />
-        <StudentFeedback />
-        <OurPartners />
+        {/* <StudentFeedback /> */}
+        {/* <OurPartners /> */}
         {/* <OperationalCities /> */}
         <Footer />
       </main>
