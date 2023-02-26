@@ -38,15 +38,17 @@ export default function Home() {
         style={{ scaleX: scrollYProgress }}
       />
       <main
-        className={`${darkTheme ? "dark" : ""} bg-fixed`}
+        className={`${
+          darkTheme ? "dark" : ""
+        } bg-cover bg-fixed bg-center bg-no-repeat`}
         style={{ backgroundImage: "url('/home/attachmentFixed.png')" }}
       >
-        {/* <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} /> */}
+        <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
         {/* <TwNav /> */}
         <HeroSection />
         <ProgramInNutshell />
         <WhyToJoin />
-        {/* <StudentFeedback /> */}
+        <StudentFeedback />
         {/* <OurPartners /> */}
         {/* <OperationalCities /> */}
         <Footer />

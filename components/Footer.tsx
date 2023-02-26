@@ -21,7 +21,7 @@ export default function Footer() {
         backgroundImage: "url('/home/footer.png')",
       }}
     >
-      <div className="mx-10 flex flex-wrap md:mx-20">
+      <div className="mx-5 flex flex-wrap sm:mx-10 md:mx-20">
         <div className="min-w-[20rem] flex-1">
           <Image src={logo} alt="logo of Panaverse" />
           <Link
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
         {/* <h6 className="my-2 text-2xl font-semibold text-accent">Courses</h6> */}
-        <ul className="min-w-[20rem] flex-1 cursor-pointer divide-y divide-gray-50 px-2 py-2 text-sm text-black shadow dark:divide-slate-600 dark:text-gray-200 md:text-base">
+        <ul className="min-w-[18rem] flex-1 cursor-pointer divide-y divide-gray-50 px-2 py-2 text-sm text-black shadow dark:divide-slate-600 dark:text-gray-200 md:text-base lg:min-w-[20rem]">
           <li>
             <span className="block px-4 py-2 hover:text-accent">
               Web 3.0 and Metaverse
@@ -103,7 +103,7 @@ export default function Footer() {
             </span>
           </li>
         </ul>
-        <form className="flex min-w-[20rem] flex-1 flex-col justify-evenly p-8 text-accent  lg:p-1">
+        <form className="flex min-w-[20rem] flex-1 flex-col justify-evenly p-5 text-accent sm:p-8  lg:p-1">
           <label className="text-2xl font-semibold" htmlFor="newsLetter">
             Subscribe
           </label>
@@ -124,13 +124,13 @@ export default function Footer() {
         </form>
       </div>
 
-      <div className="flex h-24 items-center justify-center text-accent">
+      <div className="mx-5 flex h-24 items-center justify-center text-accent">
         <Link
           href="https://github.com/shehza-d/panaverse-site"
-          className="flex items-center justify-center p-2"
+          className="flex items-center justify-center p-2 text-sm font-light sm:text-lg"
         >
-          <AiFillCopyrightCircle /> &nbsp;&nbsp; 2023 Panaverse DAO. All rights
-          by reserved SHEHZAD.
+          <AiFillCopyrightCircle className="mr-2 text-xl" />
+          2023 Panaverse DAO. All rights by reserved SHEHZAD.
         </Link>
       </div>
     </footer>

@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import heroCartoon from "../../public/home/hero-cartoon.png";
 export default function HeroSection() {
   return (
     <header
       style={{ backgroundImage: "url('/home/hero.png')" }}
-      className="h-screen bg-cover bg-center bg-no-repeat"
+      className="min-h-screen bg-cover bg-center bg-no-repeat"
       // style={{ backgroundImage: "url('/hero.png')" }}
     >
-      <div className="flex h-full flex-wrap items-center justify-center">
-        <div className="w-2/5">
-          <h1 className="text-5xl font-black text-wt">
+      <div className="flex min-h-full flex-col items-center justify-center px-6 pt-32 md:flex-row">
+        <div className="min-w-[300px] max-w-[500px]">
+          <h1 className="text-4xl font-black text-wt md:text-5xl">
             Become{" "}
             <span className="inline-block bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent">
               Certified Web 3.0
@@ -20,7 +20,7 @@ export default function HeroSection() {
               Metaverse Developer
             </span>
           </h1>
-          <h3 className="my-8 text-2xl  font-normal text-gray-50">
+          <h3 className="my-8 text-xl font-normal text-gray-50 md:text-2xl">
             Launch Your Dev Career With Web 3 and Metaverse Getting Ready for
             the Next Generation of the Internet
           </h3>
@@ -33,27 +33,21 @@ export default function HeroSection() {
             </Link>
           </button>
         </div>
-        <div
-          style={{ backgroundImage: "url('/home/hero-cartoon.png')" }}
+        {/* <div
+          // style={{ backgroundImage: "url('/home/hero-cartoon.png')" }}
           className="h-[70%]  w-[45%]  bg-contain bg-center bg-no-repeat"
-        ></div>
-        {/* <Image
-          className="w-1/2 "
-          src="/main/hero-cartoon.png"
+        ></div> */}
+        <Image
+          className="h-[420px] w-[420px] lg:h-[620px] lg:w-[620px] xl:h-[720px] xl:w-[720px]"
+          src={heroCartoon}
           alt="hero section cartoon"
           width={528}
           height={541}
-        /> */}
+        />
       </div>
     </header>
   );
 }
-
-// background: hsla(168, 82%, 37%, 1);
-// background: linear-gradient(90deg, hsla(168, 82%, 37%, 1) 47%, hsla(234, 93%, 67%, 1) 100%);
-// background: -moz-linear-gradient(90deg, hsla(168, 82%, 37%, 1) 47%, hsla(234, 93%, 67%, 1) 100%);
-// background: -webkit-linear-gradient(90deg, hsla(168, 82%, 37%, 1) 47%, hsla(234, 93%, 67%, 1) 100%);
-// filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#11AD8E", endColorstr="#5B6CF9", GradientType=1 );
 
 {
   /* <div className="border-6 absolute -z-10 w-screen border-blue-400">
@@ -67,5 +61,5 @@ export default function HeroSection() {
           height={780}
           alt="hero banner panaverse"
         />
-      </div> */ 5;
+      </div> */
 }
