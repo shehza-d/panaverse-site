@@ -49,8 +49,8 @@ export default function Home() {
         <ProgramInNutshell />
         <WhyToJoin />
         <StudentFeedback />
-        {/* <OurPartners /> */}
-        {/* <OperationalCities /> */}
+        <OurPartners />
+        <OperationalCities />
         <Footer />
       </main>
       {/* // </ContextProvider> */}

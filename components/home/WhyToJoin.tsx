@@ -7,9 +7,11 @@ import img4 from "../../public/home/why-to-join-4.png";
 export default function WhyToJoin() {
   return (
     <section className=" flex flex-col items-center justify-evenly  bg-white px-8 py-8 transition-all duration-300  dark:bg-bk sm:px-14  md:h-[120vh]   ">
-      <h2 className="gradient text-4xl font-bold sm:text-5xl">Why to Join</h2>
+      <h2 className="gradient text-4xl font-bold sm:text-5xl md:text-6xl">
+        Why to Join
+      </h2>
       <div className="md:w-[70%] lg:w-[60%]">
-        <p className="py-4 text-justify  text-gray-800 transition-all duration-300 dark:text-gray-300 sm:text-lg">
+        <p className="py-4 text-justify  text-gray-800 transition-all duration-300 dark:text-gray-300 sm:text-lg lg:text-2xl">
           In this brand-new type of curriculum, students will learn how to make
           money and boost exports in the classroom and will begin doing so
           within six months of the program&apos;s beginning. It resembles a

@@ -13,7 +13,7 @@ export default function OperationalCities() {
   console.log("sheh");
 
   return (
-    <section className="my-10 flex items-center justify-center bg-white py-14 transition-all duration-500  dark:bg-bk">
+    <section className="my-10 flex min-h-[300px] items-center justify-center overflow-x-scroll bg-white px-2 py-14  dark:bg-bk">
       <h3 className="gradient w-[300px] text-center text-4xl font-bold sm:text-5xl">
         Operational Cities
       </h3>
@@ -30,9 +30,10 @@ export default function OperationalCities() {
         height={300}
         alt="karachi"
       />
-      <Image src={isd} alt="islamabad city" />
-      <Image src={lahore} alt="lahore" />
-      <Image src={peshawar} alt="peshawar" />
+      <Image className="h-[320px]" src={isd} alt="islamabad city" />
+      <Image className="h-[320px]" src={lahore} alt="lahore" />
+      <Image className="h-[320px]" src={lahore} alt="lahore" />
+      <Image className="h-[320px]" src={peshawar} alt="peshawar" />
 
       <div className="flex h-[300px] w-[200px] items-center rounded-2xl border-4 border-accent bg-[#2e2e3f]">
         <h4 className="text-center text-2xl font-semibold  text-gray-200">

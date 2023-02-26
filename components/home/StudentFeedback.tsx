@@ -4,11 +4,13 @@ import me from "../../public/home/shehzad.jpg";
 
 export default function StudentFeedback() {
   return (
-    <section className="flex min-h-screen flex-col justify-evenly">
-      <h2 className="text-5xl font-bold text-gray-100">StudentFeedback</h2>
+    <section className="flex min-h-screen flex-col justify-between px-5  sm:px-10  md:px-14 lg:px-20">
+      <h2 className="mt-20 text-3xl font-bold text-gray-100 md:text-5xl">
+        StudentFeedback
+      </h2>
 
-      <div className=" w-[600px] rounded-3xl border-4 border-accent bg-[#2e2e3f] p-10">
-        <div className="flex justify-between border-2 border-red-300">
+      <div className="relative top-24 min-w-[300px] max-w-[800px]  rounded-3xl border-4 border-accent bg-[#2e2e3f] p-10">
+        <div className="flex justify-between ">
           <div className="flex items-center gap-6">
             <Image
               className="h-24 w-24 rounded-full"
@@ -16,10 +18,10 @@ export default function StudentFeedback() {
               alt="student photo"
             />
             <div className="f">
-              <h4 className="gradient text-3xl font-bold text-accent underline ">
+              <h4 className="gradient text-2xl font-bold text-accent underline sm:text-3xl ">
                 Shehzad Iqbal
               </h4>
-              <h6 className=" text-xl font-medium text-accent">
+              <h6 className="text-lg font-medium text-accent sm:text-xl">
                 Web 3 Developer
               </h6>
             </div>
@@ -34,7 +36,7 @@ export default function StudentFeedback() {
           />
         </div>
 
-        <p className="pl-16 text-justify  text-lg font-normal text-slate-50">
+        <p className="text-justify text-base font-normal text-slate-50 sm:text-lg lg:pl-16">
           It&lsquo;s to address and expresses gratitude for their dedication to
           teaching and providing a valuable learning experience. The student
           appreciates the supportive and inclusive classroom environment and
@@ -46,7 +48,7 @@ export default function StudentFeedback() {
         </p>
 
         <Image
-          className="relative "
+          className=""
           src="/home/comma2.svg"
           alt="student photo"
           width={44}
@@ -54,7 +56,7 @@ export default function StudentFeedback() {
         />
         {/* <span className="text-9xl text-accent"> &ldquo; &rdquo;</span> */}
       </div>
-      <Image className="relative bottom-1 left-8" src={model} alt="model" />
+      <Image className="z-10 self-end" src={model} alt="model" />
     </section>
   );
 }
