@@ -1,6 +1,6 @@
 "use server";
 import Image from "next/image";
-import themeGradient from "../../public/theme-gradient.png";
+// import themeGradient from "../../public/theme-gradient.png";
 import karachi from "../../public/home/cities/karachi4.jpg";
 import lahore from "../../public/home/cities/lahore.png";
 import peshawar from "../../public/home/cities/peshawar.png";

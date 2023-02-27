@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
         {/* <h6 className="my-2 text-2xl font-semibold text-accent">Courses</h6> */}
-        <ul className="min-w-[18rem] flex-1 cursor-pointer divide-y divide-gray-50 px-2 py-2 text-sm text-black shadow dark:divide-slate-600 dark:text-gray-200 md:text-base lg:min-w-[20rem]">
+        <ul className="min-w-[18rem] flex-1 cursor-pointer divide-y  divide-slate-600 px-2 py-2 text-sm text-gray-200 shadow md:text-base lg:min-w-[20rem]">
           <li>
             <span className="block px-4 py-2 hover:text-accent">
               Web 3.0 and Metaverse

@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
       <div className="flex min-h-full flex-col items-center justify-center px-6 pt-32 md:flex-row">
         <div className="min-w-[300px] max-w-[500px]">
-          <h1 className="text-4xl font-black text-wt md:text-5xl">
+          <h1 className="text-4xl font-black text-wt md:text-5xl xl:text-6xl">
             Become{" "}
             <span className="inline-block bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent">
               Certified Web 3.0

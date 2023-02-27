@@ -4,16 +4,15 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 // import logo from "../public/panaverse-logo.png";
 // import logoDk from "../public/panaverse-logo-red.png";
-
 // import { useContext } from "react";
 // import { GlobalContext } from "../context/context";
+import { RiMenu4Line, RiCloseFill } from "react-icons/ri";
 
 export default function Navbar({ setDarkTheme, darkTheme }: any) {
   // const { state, dispatch } = useContext(GlobalContext);
+  const [hamburgerMenu, setHamburgerMenuOpen] = useState(false);
   const [dropDownState, setDropDownState] = useState(false);
   const handleDropDownState = () => setDropDownState(!dropDownState);
-  // const dropDownBtn = useRef<HTMLButtonElement>(null);
-  // const dropDown = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     const handleListener = (e: any) => {
@@ -25,11 +24,18 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
   }, []);
 
   return (
-    <nav className="fixed top-1 z-50 flex w-screen items-center justify-around	 bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
-      <div className="flex items-center gap-10">
+    <nav className="fixed top-1 z-50 flex w-screen items-center justify-around bg-white bg-opacity-40 py-2 backdrop-blur-md transition-all  duration-300 ease-in-out dark:bg-slate-700 dark:bg-opacity-40">
+      <button
+        className="block rounded-lg border-2 border-gray-800 p-2  text-3xl shadow-md shadow-accent dark:border-gray-300 dark:text-slate-100  md:hidden"
+        onClick={() => setHamburgerMenuOpen(!hamburgerMenu)}
+      >
+        {hamburgerMenu ? <RiCloseFill /> : <RiMenu4Line />}
+      </button>
+
+      <div className="flex items-center gap-7 lg:gap-10">
         <Link href={"/"}>
           <Image
-            className=""
+            // className="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px]"
             width={150}
             height={150}
             src={`${
@@ -38,7 +44,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
             alt="Logo of Panaverse"
           />
         </Link>
-        <ul className="flex items-center gap-2 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200">
+        <ul className="hidden items-center gap-1 text-xl font-medium text-gray-900 transition-all duration-300 dark:text-slate-200 md:flex lg:gap-2">
           <li>
             <Link href={"/"} className="px-2 py-1  hover:text-accent">
               Home
@@ -117,7 +123,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
           </li>
         </ul>
       </div>
-      <div className="flex items-center gap-8 transition-all duration-300">
+      <div className="flex items-center gap-2 transition-all duration-300  md:gap-5 lg:gap-8">
         <button className="p-2">
           <Image
             className=" invert transition-all duration-300 dark:invert-0	"
