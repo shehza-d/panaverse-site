@@ -14,15 +14,16 @@
 }
 
 .bg_glow::after {
+  /* jisper ye lage ga uski position relative karni hogyi */
+  content: "";
   background: rgba(15, 189, 15, 0.351);
   width: 240px;
   height: 180px;
   position: absolute;
   z-index: 5;
   border-radius: 50%;
-  content: "";
-  left: 50%;
-  top: -50px;
+  /* left: 50%; */
+  /* top: -50px; */
   filter: blur(65px);
   /* transform: translateZ(0); */
 }
