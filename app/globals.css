@@ -13,6 +13,20 @@
   @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
 }
 
+.bg_glow::after {
+  background: rgba(15, 189, 15, 0.351);
+  width: 240px;
+  height: 180px;
+  position: absolute;
+  z-index: 5;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  top: -50px;
+  filter: blur(65px);
+  /* transform: translateZ(0); */
+}
+
 button,
 input,
 textarea,

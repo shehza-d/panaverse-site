@@ -13,11 +13,11 @@ import journey from "../../public/home/journey.png";
 export default function OurPartners() {
   return (
     <section className="relative flex h-[60vh] flex-col justify-evenly bg-white transition-all duration-300 dark:bg-bk ">
-      <h3 className="gradient z-30 text-center text-4xl font-bold sm:text-5xl">
+      <h3 className="bg_glow gradient relative z-30 text-center text-4xl font-bold sm:text-5xl">
         OurPartners
       </h3>
       <Image
-        className="absolute -left-4 top-36 z-10 h-[175px] w-[175px] sm:top-20 sm:left-8 sm:h-[200px] sm:w-[200px]"
+        className="absolute -left-4 top-36 z-30 h-[175px] w-[175px] sm:top-20 sm:left-8 sm:h-[200px] sm:w-[200px]"
         src={journey}
         width={200}
         height={200}
