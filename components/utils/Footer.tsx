@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../public/panaverse-logo.png";
+import logo from "../../public/panaverse-logo.png";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
