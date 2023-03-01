@@ -7,7 +7,7 @@ import img4 from "../../public/home/why-to-join-4.png";
 export default function WhyToJoin() {
   return (
     <section className="flex flex-col items-center justify-evenly bg-white px-8 py-8 dark:bg-bk sm:px-14 md:h-[120vh]">
-      <h2 className="bg_glow relative z-50 text-4xl font-bold text-amber-50 sm:text-5xl md:text-6xl">
+      <h2 className="bg_glow gradient relative z-50 text-4xl font-bold text-amber-50 sm:text-5xl md:text-6xl">
         Why to Join
       </h2>
       <div className="md:w-[70%] lg:w-[60%]">
