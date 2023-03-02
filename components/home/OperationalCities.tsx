@@ -8,7 +8,7 @@ import isd from "../../public/home/cities/islamabad.png";
 // import { useState } from "react";
 
 export default function OperationalCities() {
-  // const [first, setFirst] = useState("");
+  // const [first, setFirst] = useState("")
   console.log("sheh");
 
   return (
