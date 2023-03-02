@@ -16,12 +16,7 @@ export default function OperationalCities() {
         Operational Cities
       </h3>
       {/* <div className=" right-0 h-52 w-52 rounded-lg bg-[rgba(55,216,43,0.3)] blur-3xl"></div> */}
-      {/* <div
-        className="h-52 w-52 "
-        style={{ backgroundImage: "url('/theme-gradient.png')" }}
-      ></div> */}
-
-      <Image
+       <Image
         className="mr-2 h-[303px] rounded-2xl"
         src={karachi}
         width={200}
