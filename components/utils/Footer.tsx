@@ -16,7 +16,7 @@ import { MdOutlineMail } from "react-icons/md";
 export default function Footer() {
   return (
     <footer
-      className="flex min-h-[28rem] flex-col justify-end pt-3"
+      className="flex min-h-[28rem] flex-col justify-end bg-black bg-center  pt-3"
       style={{
         backgroundImage: "url('/home/footer.png')",
       }}

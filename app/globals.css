@@ -13,7 +13,7 @@
   @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
 }
 
-.bg_glow::after {
+.bg_glowX::after {
   /* jisper ye lage ga uski position relative karni hogyi */
   content: "";
   background: rgba(15, 189, 15, 0.351);
