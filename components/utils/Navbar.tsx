@@ -39,7 +39,7 @@ export default function Navbar({ setDarkTheme, darkTheme }: any) {
             width={150}
             height={150}
             src={`${
-              darkTheme ? "/panaverse-logo.png" : "/panaverse-logo-red.png"
+              darkTheme ? "/panaverse-logo.png" : "/panaverse-logo-black.png"
             }`}
             alt="Logo of Panaverse"
           />
